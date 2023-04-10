@@ -10,7 +10,7 @@
     <insert id="saveUser" parameterType="com.subpj.openchatting.domain.UserDto">
         INSERT INTO user
         (
-            no
+             no
             ,profil_image_url
             ,background_Image_url
             ,name
