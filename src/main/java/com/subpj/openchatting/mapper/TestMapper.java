@@ -11,4 +11,5 @@ public interface TestMapper {
 
     // 방리스트 가져오기
     List<TestDto> selectMemberList() throws Exception;
+
 }
