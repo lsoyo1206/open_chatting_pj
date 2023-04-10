@@ -7,4 +7,28 @@
 
     </select>
 
+    <insert id="saveUser" parameterType="com.subpj.openchatting.domain.UserDto">
+        INSERT INTO user
+        (
+            no
+            ,profil_image_url
+            ,background_Image_url
+            ,name
+            ,user_id
+            ,user_pw
+            ,is_deleted
+            ,created_at
+        )
+        VALUES(
+            #{no}
+            ,#{profilImageUrl}
+            ,#{backgroundImageUrl}
+            ,#{name}
+            ,#{userId}
+            ,#{userPw}
+            ,#{isDeleted}
+            ,#{createdAt}
+        );
+    </insert>
+
 </mapper>

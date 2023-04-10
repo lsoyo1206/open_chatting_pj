@@ -33,6 +33,7 @@ public class LoginController {
     public String login(@ModelAttribute @Validated UserDto userDto,
                         BindingResult bindingResult,
                         @RequestParam(defaultValue = "/") String redirectURL) {
+        System.out.println("로그인 기능 ===========>");
 
         if (bindingResult.hasErrors()) {
             return "login/loginForm";
@@ -76,6 +77,5 @@ public class LoginController {
 
         return "loginHome";
     }
-    
 
 }
